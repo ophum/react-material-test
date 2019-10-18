@@ -1,21 +1,22 @@
-import Button from '@material-ui/core/Button';
-import * as React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import * as React from 'react';
+
+import Button from '@material-ui/core/Button';
+import Container from '@material-ui/core/Container';
+
+import Header from './components/Header';
 
 class App extends React.Component {
   public render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <Button variant="outlined">Hello World!!</Button>
-      </div>
+      <div>
+        <Header />
+        <Container maxWidth="lg">
+          test
+          <Button variant="contained" color="primary" >test</Button>
+        </Container>
+        </div>
     );
   }
 }
