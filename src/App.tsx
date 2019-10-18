@@ -1,7 +1,7 @@
+import Button from '@material-ui/core/Button';
 import * as React from 'react';
-import './App.css';
-
 import logo from './logo.svg';
+import './App.css';
 
 class App extends React.Component {
   public render() {
@@ -14,6 +14,7 @@ class App extends React.Component {
         <p className="App-intro">
           To get started, edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <Button variant="outlined">Hello World!!</Button>
       </div>
     );
   }
